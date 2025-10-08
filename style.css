@@ -131,3 +131,38 @@ footer {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+.logo {
+  display: flex;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-weight: 600;
+  font-size: 1.5rem;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.logo-icon {
+  color: #A259FF; /* purple */
+  font-size: 1.7rem;
+  animation: pulse 1.5s infinite;
+}
+
+.logo-text {
+  color: #ffffff;
+}
+
+.logo-text .dot {
+  color: #A259FF;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
