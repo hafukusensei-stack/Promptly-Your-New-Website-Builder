@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Promptly | Websites for Businesses</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f8f9fa;
+      color: #222;
+      overflow-x: hidden;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px 10%;
+      background: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav h1 {
+      font-size: 1.5rem;
+      color: #007aff;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #007aff;
+    }
+
+    .hero {
+      height: 85vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      background: linear-gradient(135deg, #007aff, #00c6ff);
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      max-width: 600px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      margin: 20px 0 30px;
+      max-width: 500px;
+      line-height: 1.6;
+      animation: fadeIn 2s ease;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      background: white;
+      color: #007aff;
+      border: none;
+      border-radius: 30px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #007aff;
+      color: white;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    .section {
+      padding: 80px 10%;
+      text-align: center;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #111;
+      color: white;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h1>Promptly</h1>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h2>Affordable, Modern Websites for Small Businesses</h2>
+    <p>Promptly builds professional websites that help your business stand out — fast, clean, and affordable.</p>
+    <button class="btn" onclick="scrollToSection('contact')">Get Started</button>
+  </section>
+
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Landing Page</h3>
+        <p>Perfect for promoting a product, event, or business quickly.</p>
+      </div>
+      <div class="card">
+        <h3>Business Website</h3>
+        <p>Showcase your brand with a professional 3–5 page site.</p>
+      </div>
+      <div class="card">
+        <h3>E-Commerce Setup</h3>
+        <p>Start selling online with clean and secure checkout integration.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>We’re a small creative team passionate about building websites that help businesses grow online.  
+       We believe quality design shouldn’t come with a big price tag.</p>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Let’s Work Together</h2>
+    <p>Ready to launch your website? Contact us below!</p>
+    <button class="btn" onclick="alert('Email us at hello@promptly.co!')">Email Us</button>
+  </section>
+
+  <footer>
+    <p>© 2025 Promptly. Built with 💙 to help small businesses thrive.</p>
+  </footer>
+
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
